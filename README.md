@@ -1,5 +1,5 @@
 # Projeto Site Coxinha
-# Projeto inicial para um site de coxinhas.
+ Projeto inicial para um site de coxinhas.
 
 
 <strong> stage <strong> firts - pagina inical sendo feita e estilizada, o site já está responsivo.
