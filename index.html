@@ -17,11 +17,13 @@
         <div>
             <nav class="navigation">
                 <ul class="nav-menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
-                    <li><a href="#"><i class='bx bxl-facebook-square'></i></a></li>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#home2">Sobre Nós</a></li>
+                    <li><a href="#home3">Cardapio</a></li>
+                    <li><a href="#home4">Contato</a></li>
+                    <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                    <li><a href="www.instagram.com/samujordano_"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href="https://github.com/Simbyonte333/Projeto-Coxinha"><i class='bx bxl-github'></i></a></li>
                 </ul>
   </div>
 
@@ -34,16 +36,84 @@
     </header>
 
     <main>
-        <section class="conteudo">
-            <div class="home-text">
+        <section class="conteudo" id="home">
+            <div class="home-text" >
                 <h1>Melhores <span>coxinhas</span> do Brasil</h1>
                 <h4>coxinhas gourmet a sua disposição!</h4>
                 <div class="btn-home">
-                    <button class="btn-peca">Peça já!</button>
+                    <button class="btn-peca"><a href="#home3">Peça já!</a></button>
                 </div>
             </div>
         </section>
-    </main>
-<script src="main.js"></script>
+
+        <section class="conteudo-sobre" id="home2">
+            <div class="sobrenos-text">
+                <h1>Um pouco sobre a <span>gente<span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Eum, enim deserunt illum fuga amet, dolor animi nulla earum repellendus, itaque odio. 
+                    Natus minima consequuntur magni enim eius neque accusantium odio!</p>
+            </div>
+            <div class="sobrenos-img">
+                <img src="./img/pexels-canva-studio-3153198.jpg" alt="">
+            </div>
+        </section>
+
+        <div class="tittle-home3" id="home3">
+            <h1>Cardapio</h1>
+        </div>
+
+        <section class="cardapio">
+            
+            <div class="card" >
+                    <img src="./img/tradicional coxinha.jpg" alt="">
+                <div class="card-text">
+                    <h1>Coxinha Tradicional</h1>
+                    <p>Coxinha cremosa e deliciosa</p>
+                    <span>R$5,50</span>
+                    <button class="btn-trad">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <div class="card">
+                    <img src="./img/tradicional coxinha.jpg" alt="">
+                <div class="card-text">
+                    <h1>Coxinha Crocamte</h1>
+                    <p>Coxinha cremosa e deliciosa</p>
+                    <span>R$5,50</span>
+                    <button class="btn-trad">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <div class="card">
+                    <img src="./img/tradicional coxinha.jpg" alt="">
+                <div class="card-text">
+                    <h1>Coxinha Captury</h1>
+                    <p>Coxinha cremosa e deliciosa</p>
+                    <span>R$5,50</span>
+                    <button class="btn-trad">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <div class="card">
+                    <img src="./img/tradicional coxinha.jpg" alt="">
+                <div class="card-text">
+                    <h1>Coxinha Captury</h1>
+                    <p>Coxinha cremosa e deliciosa</p>
+                    <span>R$5,50</span>
+                    <button class="btn-trad">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </section>
+    </footer>
+</main>
 </body>
+    <footer class="footer" id="home4">
+        <div class="text-footer">
+            <h4>Desenvolvido por <span>Samuel Jordano</span> &copy; </h4>
+            <div class="icons">
+                <li><a href="www.instagram.com/samujordano_"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="https://github.com/Simbyonte333"><i class='bx bxl-github'></i></a></li>
+            </div>
+        </div>
+    <script src="main.js"></script>
 </html>
