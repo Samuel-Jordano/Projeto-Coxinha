@@ -9,6 +9,7 @@
     --semiBlack: rgba(29,29,29,0.8);
     --yellow:#FD8D14;
     --red:#C51605;
+    --green: #54B435;
     
 }
 /* Estilização aplicada a toda pagina */ 
@@ -22,7 +23,8 @@
 }
 
 html{
-    height: 500vh;
+    
+    scroll-behavior: smooth;
 }
 
 /* Estilização do header  */
@@ -79,12 +81,12 @@ header .nav-menu i{
 
 header.rolagem{
     background: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)) ,var(--black);
-    padding: 15px 2%;
+    padding: 10px 2%;
     transition: all 0.5s;
 }
 
 header .nav-menu a:hover{
-    background-color: var(--semiBlack);
+    padding:  10px;
     border-bottom: 4px solid var(--yellow);
     color: var(--yellow);
     transition: all 0.5s;
@@ -98,6 +100,7 @@ header .nav-menu i:hover{
 span{
     color: var(--yellow);
 }
+
 /* Estilização do Corpo */
 
 section.conteudo{
@@ -124,7 +127,7 @@ section h4{
     font-weight: 300;
     font-size: 18px;
 }
-
+/* Estilizaçaõ do Botão */
 .btn-home{
 display: inline-flex;
 justify-content: center;
@@ -144,16 +147,186 @@ padding: 30px;
     font-weight: 600;
     font-size: 15px;
     background-color: var(--yellow);
+    
+}
+
+.btn-peca a{
+    text-decoration: none;
     color: var(--white);
+}
+
+.btn-peca a:hover{
+    color: var(--yellow);
+    transition: all 0.5s;
 }
 
 section .btn-peca:hover{
     color: var(--yellow);
     background-color: var(--black);
-    box-shadow:  0.3rem 0.4rem 0.2rem var(--yellow);
+    box-shadow:  0.3rem 0.4rem var(--yellow);
     transition: all 0.5s;
 }
-/* Responsavidade */
+
+section.conteudo-sobre{
+    height: 100vh;
+    display: flex;
+    background: var(--black);
+    align-items: center;
+    justify-content: center;
+    padding: 60px 4%;
+
+}
+
+section .sobrenos-text h1{
+    font-size: 36px;
+    text-align: left;
+    margin-left: 30px;
+
+}
+section .sobrenos-text p{
+    color: var(--white);
+    margin-left: 30px ;
+    line-height: 1.5rem;
+}
+section .sobrenos-text h1 span:hover{
+    text-decoration: underline;
+}
+section .sobrenos-img img{
+    border-radius: 39px;
+    width: 500px;
+    padding: 20px 4%;
+}
+
+section .sobrenos-img img:hover{
+    box-shadow: 0.3rem 0.4rem 1rem var(--yellow);
+    padding: 0;
+    transition: all 1s;
+}
+
+section.cardapio{
+    display: flex;
+    height: 80vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: url(./img/background\ coxinha.png);
+    background-repeat: repeat;
+    background-size: cover;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+}
+
+section .card{
+    width: 261px;
+    height: 374px;
+    background: var(--black);
+    border-radius: 12px;
+    text-align: center;
+}
+
+section .card:hover{
+    box-shadow: 0 0.1rem 0.5rem 0.2rem var(--semiBlack);
+    transition: all 0.5s;
+}
+section .card img{
+    display: flex;
+    flex-direction: column;
+    border-radius: 9px;
+    width: 200px;
+    margin-left: 28px;
+    margin-top: 18px;
+}
+
+section .card h1{
+    font-size: 15px;
+    margin-top: 20px;
+}
+section .card p{
+    color: var(--white);
+    text-align: center;
+}
+
+section .card span{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+
+
+}
+.btn-trad{
+    display: flex;
+    width: 80%;
+    padding: 15px;
+    margin-left: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    background: var(--yellow);
+    color: var(--white);
+    border-radius: 9px;
+}
+
+.btn-trad:hover{
+    background: var(--green);
+    transition: all 1s;
+    box-shadow: 0 0.1rem 0.5rem var(--green);
+    border: none;
+}
+ 
+.tittle-home3 h1{
+    height: 21vh;
+    display: flex;
+    background-color: var(--yellow);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: var(--white);
+    font-family: Courgette;
+
+
+}
+
+footer.footer{
+    height: 20vh;
+    display: flex;
+    background: var(--black);
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+div.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 26px;
+
+    
+}
+
+div.icons a{
+    display: flex;
+
+}
+
+.text-footer h4{
+    color: var(--white);
+}
+
+.text-footer h4 span{
+    text-decoration: underline;
+
+}
+.text-footer i{
+    color: var(--white);
+
+}
 
 @media screen and (max-width: 800px) {
     
@@ -211,4 +384,45 @@ section .btn-peca:hover{
         transition: 0.3s;
     }
 
+    section.conteudo-sobre{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section .sobrenos-text{
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    section .sobrenos-text h1{
+        text-align: center;
+        font-size: 46px;
+    }
+
+    section .sobrenos-text p{
+        font-size: 16px;
+        margin-left: 0;
+        padding: 20px 2%;
+    }
+
+    section .sobrenos-img img{
+        width: 350px;
+        border-radius: 35px;
+    }
+
+    section.cardapio{
+        display: flex;
+        height: 184vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        background: url(./img/background.png);
+        background-repeat: repeat;
+        gap: 2.5rem;
+    }
+    section .card{
+        margin-top: px;
+    }
 }
