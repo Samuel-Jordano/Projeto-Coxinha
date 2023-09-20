@@ -1,13 +1,16 @@
-const navmenu = document.querySelector('.nav-menu');
-const menu = document.querySelector('.menu');
+const togglebtn = document.querySelector('.toggle-btn')
+const togglebtnicon = document.querySelector('.toggle-btn i')
+const DropMenu = document.querySelector('.drop-menu')
 
-menu.addEventListener('click', function(){
-    menu.classList.toggle('ativo');
-    navmenu.classList.toggle('ativo');
+
+togglebtn.addEventListener('click', function(){
+    DropMenu.classList.toggle('open');
+    const isOpen = DropMenu.classList.contains('open')
+    
+    togglebtnicon.classList = isOpen
+    ? 'bx bx-x bx-tada'
+    : 'bx bx-menu'
+
 })
 
-window.addEventListener('scroll', function(){
-    let header = document.querySelector('.header')
-    header.classList.toggle('rolagem', window.scrollY > 0)
-})
 
