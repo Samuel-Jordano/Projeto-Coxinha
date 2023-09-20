@@ -413,7 +413,7 @@ div.icons a{
 
     section.cardapio{
         display: flex;
-        height: 184vh;
+        height: 230vh;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: flex-start;
