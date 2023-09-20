@@ -91,7 +91,7 @@ header .drop-menu{
     height: 0;
     width: 300px;
     background: var(--semiBlack);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     overflow: hidden;
     border-radius: 7px;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -222,8 +222,7 @@ section .sobrenos-img img:hover{
 
 section.cardapio{
     display: flex;
-    height: 80vh;
-    flex-direction: row;
+    height: 120vh;
     justify-content: center;
     align-items: center;
     background: url(./img/background\ coxinha.png);
@@ -231,6 +230,7 @@ section.cardapio{
     background-size: cover;
     gap: 1rem;
     flex-wrap: wrap;
+    width: 100%;
     
 }
 
@@ -395,7 +395,7 @@ div.icons a{
 
     section.cardapio{
         display: flex;
-        height: 230vh;
+        height: 250vh;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: flex-start;
