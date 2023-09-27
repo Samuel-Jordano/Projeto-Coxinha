@@ -10,15 +10,10 @@
 
 <h2> :file_folder: Projeto inicial para um site de coxinhas.</h2>
 
-
-1.  :pushpin: **Stage** - pagina inical sendo feita e estilizada, o site já está responsivo.
-![image](https://github.com/Simbyonte333/Projeto-Coxinha/assets/101475958/8c4c7782-7f2d-43d3-a80f-1e1e30324acd)
-
-
-2. 📌 **Stage** -  Adicionado animações e pequenos detalhes.
+1. 📌 **Stage** -  Adicionado animações e pequenos detalhes.
 ![ezgif com-video-to-gif](https://github.com/Simbyonte333/Projeto-Coxinha/assets/101475958/1fab4306-e489-45f0-ac74-04f915a7b5b4)
 
-3. 📌 **Stage** -  Site Responsivo e foi resolvido alguns bugs. 
+2. 📌 **Stage** -  Site Responsivo e foi resolvido alguns bugs. 
 ![ezgif com-video-to-gif (2)](https://github.com/Simbyonte333/Projeto-Coxinha/assets/101475958/772b026c-9d92-499f-8311-a885072632ac)
 
 
